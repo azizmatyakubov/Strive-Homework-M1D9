@@ -69,4 +69,6 @@ button {
     height: 50px;
 }
 
-
+.selected {
+    background-color: red;
+}

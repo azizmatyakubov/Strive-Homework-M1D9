@@ -9,6 +9,7 @@ const displayNumbers = () => {
     for(let i=1; i<=76; i++) {
         let numberNode = document.createElement('div')
         numberNode.classList.add('number')
+        numberNode.setAttribute('id', i)
         numberNode.innerText = i
         container.appendChild(numberNode)
     }
@@ -19,10 +20,16 @@ const displayNumbers = () => {
     container.appendChild(lastDiv)
 }
 
+
+
 const getRandomNumber = () => {
     let randomNumberTable = document.getElementById('randomNumber')
     randomNumberTable.innerHTML = ''
-    let randomNums = []
+    
+
+
+    var randomNums = []
+
     for(let i=0; i<24; i++) {
         let randomNum = Math.floor(Math.random() * 77) 
         randomNums.push(randomNum)
@@ -30,8 +37,14 @@ const getRandomNumber = () => {
         randomNumberNode.classList.add('randomNumber')
         randomNumberNode.innerText = randomNums[i]
         randomNumberTable.appendChild(randomNumberNode)
+
+        let bingoNumber = document.getElementById(randomNum)
+        bingoNumber.classList.add('selected')
     }
 
-    console.log(randomNums)
+
+    
 }
+
+
 

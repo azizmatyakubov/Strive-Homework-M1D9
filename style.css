@@ -1,0 +1,57 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+#container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    border: 1px solid black;
+    height: 400px;
+    flex: 1;
+    margin: 30px;
+    padding: 16px;
+}
+
+.number {
+    border: 1px solid black;
+    width: 65px;
+    height: 65px;
+    margin: 4px;
+}
+
+.lastDiv {
+    border: 1px solid black;
+    height: 65px;
+    width: 290px;
+    margin: 4px;
+}
+
+.footer {
+    display: flex;
+    margin: 50px;
+    
+}
+
+.button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 0.2;
+    height: 70px;
+    border: 1px solid black;
+}
+
+button {
+    width: 150px;
+    height: 50px;
+}
+
+
+.randomNumbers {
+    flex: 1;
+    height: 70px;
+    border: 1px solid black;
+}

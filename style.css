@@ -24,18 +24,22 @@
 
 .randomNumbers {
     display: flex;
+    flex-wrap: wrap;
+    flex: 1;
     align-items: center;
-    justify-content: space-around;
+    height: 200px;
 }
 
 .randomNumber {
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-wrap: wrap;
     border: 1px solid black;
-    width: 40px;
-    height: 40px;
+    width: 70px;
+    height: 70px;
     font-size: 24px;
+    margin-right: 12px;
 }
 
 .lastDiv {
@@ -47,17 +51,17 @@
 
 .footer {
     display: flex;
-    margin: 50px;
-    
+    margin: 30px;
+    height: 200px;
+    border: 1px solid blue;
 }
 
 .button {
     display: flex;
     align-items: center;
     justify-content: center;
-    flex: 0.2;
-    height: 70px;
-    border: 1px solid black;
+    flex: 0.3;
+    height: 200px;
 }
 
 button {
@@ -66,8 +70,3 @@ button {
 }
 
 
-.randomNumbers {
-    flex: 1;
-    height: 70px;
-    border: 1px solid black;
-}

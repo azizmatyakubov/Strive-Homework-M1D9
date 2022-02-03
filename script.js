@@ -20,6 +20,8 @@ const displayNumbers = () => {
 }
 
 const getRandomNumber = () => {
+    let randomNumberTable = document.getElementById('randomNumber')
+    randomNumberTable.innerHTML = ''
     let randomNums = []
     for(let i=0; i<24; i++) {
         let randomNum = Math.floor(Math.random() * 77) 
@@ -27,10 +29,9 @@ const getRandomNumber = () => {
         let randomNumberNode = document.createElement('div')
         randomNumberNode.classList.add('randomNumber')
         randomNumberNode.innerText = randomNums[i]
-        document.getElementById('randomNumber').appendChild(randomNumberNode)
+        randomNumberTable.appendChild(randomNumberNode)
     }
 
     console.log(randomNums)
 }
 
-getRandomNumber()

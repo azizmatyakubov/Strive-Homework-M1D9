@@ -22,6 +22,22 @@
     margin: 4px;
 }
 
+.randomNumbers {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.randomNumber {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid black;
+    width: 40px;
+    height: 40px;
+    font-size: 24px;
+}
+
 .lastDiv {
     border: 1px solid black;
     height: 65px;

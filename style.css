@@ -11,15 +11,22 @@
     border: 1px solid black;
     height: 400px;
     flex: 1;
-    margin: 30px;
+    margin: 10px 30px;
     padding: 16px;
 }
 
 .number {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     border: 1px solid black;
     width: 65px;
     height: 65px;
     margin: 4px;
+    border-radius: 4px;
+    -webkit-box-shadow: inset 0px 0px 42px -11px rgba(0, 21, 255, 1);
+    -moz-box-shadow: inset 0px 0px 42px -11px rgba(0, 21, 255, 1);
+    box-shadow: inset 0px 0px 42px -11px rgba(0, 21, 255, 1);
 }
 
 .randomNumbers {
@@ -51,7 +58,7 @@
 
 .footer {
     display: flex;
-    margin: 30px;
+    margin: 10px 30px;
     height: 200px;
     border: 1px solid blue;
 }
@@ -71,4 +78,6 @@ button {
 
 .selected {
     background-color: red;
+    color: #eee;
+    font-size: 24px
 }
